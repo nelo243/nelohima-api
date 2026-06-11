@@ -16,7 +16,7 @@ app.get('/api/news', async (req, res) => {
         const query = req.query.q || 'technologie';
         const page = req.query.page || 1;
         
-        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=fr&pageSize=10&page=${page}&apiKey=${API_KEY}`;
+        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=fr&pageSize=10&page=${page}&apiKey=${814f054ede894c1bae94f95ab1721c68}`;
         
         const response = await fetch(url);
         const data = await response.json();
